@@ -1,0 +1,115 @@
+body {
+	background-image: url("../includes/1.png");
+	background-position: center center;
+	background-repeat: repeat;
+}
+
+* {
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.main-wrapper {
+	height: 100vh;
+}
+
+h2 {
+	font-family: 'Finger Paint', cursive;
+	color: #1f4baa;
+	margin-bottom: 15px;
+}
+
+.main-wrapper .right-box .details {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.main-wrapper .right-box ul li {
+	margin-top: 8px;
+}
+
+.main-wrapper .left-box {
+	background: -moz-linear-gradient(top, #4497a6 0%, #649ca6 100%);
+	background: -webkit-linear-gradient(top, #4497a6 0%, #649ca6 100%);
+	background: linear-gradient(top, #4497a6 0%, #649ca6 100%);
+}
+
+.main-wrapper .left-box .bg-pic {
+	background: url("../includes/2.png") center center repeat;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+}
+
+.main-wrapper .left-box .me {
+	font-family: 'Chicle', cursive;
+	color: #FFFFFF;
+	position: relative;
+	font-size: 36px;
+	letter-spacing: 2px;
+}
+
+.main-wrapper .left-box img.me {
+	width: 120px;
+	height: 120px;
+	position: relative;
+	border: 5px solid #ffffff;
+}
+
+.main-wrapper a {
+	color: #826509;
+}
+
+.main-wrapper a:hover {
+	color: #917e00;
+	text-decoration: underline;
+}
+
+.desc {
+	color: #656565;
+}
+
+.small {
+	font-size: 78% !important;
+}
+
+.title-hr {
+	width: 80px;
+	margin-top: -3px;
+	border: 1px solid #cacaca;
+}
+
+nav {
+	z-index: 99;
+	padding-right: 30px !important;
+	width: 95%;
+}
+
+nav a {
+	color: #FFF !important;
+}
+
+.intro {
+	font-size: 20px;
+	font-weight: bold;
+}
+
+@media (min-width: 992px) {
+	.intro {
+		font-size: 60px;
+	}
+}
+
+@media (max-width: 991px) {
+	.intro {
+		font-size: 40px;
+	}
+}
+
+@media (min-width: 768px) {
+	.left-fixed {
+		position: fixed;
+		top: 35%;
+	}
+}

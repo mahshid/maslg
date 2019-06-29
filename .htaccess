@@ -1,0 +1,14 @@
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+	Options +FollowSymLinks
+
+	RewriteCond %{HTTP_HOST} ^maslg.me
+	RewriteRule (.*) http://www.maslg.me/$1 [R=301,L]
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteRule ^([^\.]+)$ $1.php [NC,L]
+</IfModule>
